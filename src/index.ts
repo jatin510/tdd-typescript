@@ -9,6 +9,7 @@ export class PalindromeChecker {
   private removeSpaces(str: string): string {
     return str.split(' ').join('');
   }
+
   isPalindrome(str: string): boolean {
     const reverse = this.getReversedString(str);
     return (
