@@ -1,27 +1,27 @@
 class Stack {
-  top;
-  items;
+  top: number;
+  items: {};
 
   constructor() {
     this.top = -1;
     this.items = {};
   }
-  get peek() {
+  get peek(): number {
     return this.items[this.top];
   }
 
-  pop() {
+  pop(): any {
     this.top === -1 ? -1 : (this.top -= 1);
   }
 
-  push(value) {
+  push(value): any {
     this.top += 1;
     this.items[this.top] = value;
   }
 }
 
 describe('Create stack without using the array ', () => {
-  let stack;
+  let stack: Stack;
   beforeEach(() => {
     stack = new Stack();
   });
