@@ -24,7 +24,7 @@ describe('palindrome checker ', () => {
   });
 
   it('the sentence "Was It a rat I Saw" should be a palindrome', () => {
-    const str: string = 'Was It a rat I Saw';
+    const str = 'Was It a rat I Saw';
     expect(palindromeChecker.isPalindrome(str)).toBeTruthy();
   });
 });
